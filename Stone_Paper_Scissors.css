@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center the content vertically */
+    justify-content: center; /* Center the content horizontally */
+    background-color: #669BBC;
+}
+
+header {
+    flex: 1;
+    width: 100%;
+    background-color: #003049; /* Dark blue header */
+    color: #FDF0D5; /* Light color for text */
+    text-align: center; /* Center the text */
+    padding: 1rem; /* Add some padding */
+}
+
+main {
+    flex: 2;
+    min-height: 100vh; /* Ensure the main section takes full height */
+}
+
+h2 {
+    text-align: center; /* Center the text */
+    padding: 1rem; 
+    color:#003049;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: top; /* Set game position depending on flex direction */
+    align-items: center; /* Center the content horizontally */
+    height: 70vh;
+}
+
+.game-container {
+    height: 30vmin; /* Use viewport units for responsive height */
+    width: 60vmin; /* Use viewport units for responsive width */
+    display: flex;
+    gap: 1rem; /* Add space between buttons */
+}
+
+.btn {
+    height: 18vmin; /* Use viewport units for responsive height */
+    width: 18vmin; /* Use viewport units for responsive width */
+    border: none;
+    border-radius: 50%;
+    background-color: #FDF0D5;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
