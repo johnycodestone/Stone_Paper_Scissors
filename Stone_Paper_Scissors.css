@@ -31,11 +31,10 @@ h2 {
 }
 
 footer {
-    flex: 3;
     font-size: 0.8rem;
     text-align: center; /* Center the text */
     padding: 1rem; /* Add some padding */
-    align-self: bottom;
+    width: 100%;
 }
 
 .game {
@@ -151,4 +150,14 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+#player-score-value {
+    color: lightcoral;
+    font-weight: bold;
+}
+
+#computer-score-value {
+    color: orange;
+    font-weight: bold;
 }

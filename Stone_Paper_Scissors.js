@@ -33,6 +33,7 @@ const resetScore = () => {
     playerScoreValue.innerText = playerScore.toString();
     computerScoreValue.innerText = computerScore.toString();
     result.innerText = "New Game Started";
+    options[computerPrevTurn].style.boxShadow = "0 0 1rem rgba(0, 0, 0, 0.3)";
 }
 
 const disableButtons = () => {
