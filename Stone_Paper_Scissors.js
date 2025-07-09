@@ -16,9 +16,14 @@ let playerScore = 0;
 let computerScore = 0;
 let playerTurn = 0;
 let computerTurn = 0;
+let computerPrevTurn = 0;
+const options = [stoneBtn, paperBtn, scissorsBtn];
 
 const playComputerTurn = () => {
     computerTurn = Math.floor(Math.random() * 3);
+    options[computerPrevTurn].style.boxShadow = "0 0 1rem rgba(0, 0, 0, 0.3)";
+    options[computerTurn].style.boxShadow = "0 0 10px 3px orange";
+    computerPrevTurn = computerTurn;
     console.log(`Computer turn: ${computerTurn}`);  // Just for reference
 }
 

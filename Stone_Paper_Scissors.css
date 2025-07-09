@@ -22,7 +22,6 @@ header {
 
 main {
     flex: 2;
-    min-height: 100vh; /* Ensure the main section takes full height */
 }
 
 h2 {
@@ -32,33 +31,38 @@ h2 {
 }
 
 footer {
+    flex: 3;
     font-size: 0.8rem;
     text-align: center; /* Center the text */
     padding: 1rem; /* Add some padding */
+    align-self: bottom;
 }
 
 .game {
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Set game position depending on flex direction */
     align-items: center; /* Center the content horizontally */
     height: 70vh;
 }
 
 .game-container {
     height: 30vmin; /* Use viewport units for responsive height */
-    width: 60vmin; /* Use viewport units for responsive width */
+    width: 80vmin; /* Use viewport units for responsive width */
     display: flex;
     gap: 1rem; /* Add space between buttons */
 }
 
 .btn {
-    height: 18vmin; /* Use viewport units for responsive height */
-    width: 18vmin; /* Use viewport units for responsive width */
+    height: 25vmin; /* Use viewport units for responsive height */
+    width: 25vmin; /* Use viewport units for responsive width */
     font-size: 1.25rem;
     border: none;
     border-radius: 50%;
     background-color: #FDF0D5;
+    color: #111;
+    padding: 1rem;
+    text-align: center;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
     cursor: pointer;
     transition: background-color 0.3 ease, color 0.3s ease; /* Smooth transition for hover effect */
@@ -73,7 +77,8 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    gap: 4rem;
+    padding: 5rem;
 }
 
 .msg {
@@ -105,6 +110,7 @@ footer {
 }
 
 .score-board {
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
