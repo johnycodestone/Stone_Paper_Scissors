@@ -15,18 +15,41 @@
     <header>
 
         <h1>Stone Paper Scissors</h1>
-        
+
     </header>
 
     <main>
         
-        <h2>A Game designed to test your luck!!</h2>
+        <h2>A Game designed to test your luck!! First to 5 wins!!</h2>
 
         <div class="game">
+
+            <div class="message-box hide">
+                <p class="msg">Winner</p>
+                <button class="new-game-btn">Play Again</button>
+            </div>
+
             <div class="game-container">
                 <button class="btn" id="stone">Stone</button>
                 <button class="btn" id="paper">Paper</button>
                 <button class="btn" id="scissors">Scissors</button>
+            </div>
+
+            <div class="score-board">
+                <div class="result">
+                    <p id="result-text">Result</p>
+                </div>
+                <div class="score">
+                    <div class="player-score">
+                        <p class="player-score-text">Player Score</p>
+                        <p id="player-score-value">0</p>
+                    </div>
+
+                    <div class="computer-score">
+                        <p class="computer-score-text">Computer Score</p>
+                        <p id="computer-score-value">0</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

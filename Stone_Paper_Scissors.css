@@ -27,14 +27,20 @@ main {
 
 h2 {
     text-align: center; /* Center the text */
-    padding: 1rem; 
+    padding: 1.5rem; 
     color:#003049;
+}
+
+footer {
+    font-size: 0.8rem;
+    text-align: center; /* Center the text */
+    padding: 1rem; /* Add some padding */
 }
 
 .game {
     display: flex;
     flex-direction: column;
-    justify-content: top; /* Set game position depending on flex direction */
+    justify-content: center; /* Set game position depending on flex direction */
     align-items: center; /* Center the content horizontally */
     height: 70vh;
 }
@@ -49,9 +55,94 @@ h2 {
 .btn {
     height: 18vmin; /* Use viewport units for responsive height */
     width: 18vmin; /* Use viewport units for responsive width */
+    font-size: 1.25rem;
     border: none;
     border-radius: 50%;
     background-color: #FDF0D5;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
     cursor: pointer;
+    transition: background-color 0.3 ease, color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.btn:hover {
+    background-color: lightcoral; /* Change color on hover */
+}
+
+.message-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.msg {
+    font-size: 1.5rem;
+    color: #003049; /* Dark blue text */
+    margin-bottom: 1rem; /* Add space below the message */
+    text-align: center;
+}
+
+.new-game-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #003049;
+    color: #FDF0D5;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.8rem;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+}
+
+.new-game-btn:hover {
+    background-color: #FDF0D5; /* Change color on hover */
+    color: #003049; /* Change text color on hover */
+}
+
+.hide {
+    display: none; /* Hide elements with this class */
+}
+
+.score-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vmin; /* Use viewport units for responsive height */
+}
+
+.result {
+    font-size: 2rem;
+    text-decoration: underline; /* Underline the result text */
+    color: #003049; /* Dark blue text */
+    margin-bottom: 1rem; /* Add space below the result */
+    text-align: center;
+    font-weight: bold; /* Make the result text bold */
+}
+
+.score {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; /* Add space between player and computer scores */
+}
+
+.player-score {
+    font-size: 1.5rem;
+    color: #003049; /* Dark blue text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.computer-score {
+    font-size: 1.5rem;
+    color: #003049; /* Dark blue text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
